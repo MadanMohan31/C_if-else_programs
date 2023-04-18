@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*write a C code to check wheater the given number is leap year or not.
+
+    sample input:
+    2000
+    sample output:
+    Leap Year
+
+    sample input:
+    200
+    sample output:
+    Not a Leap Year
+
+    sample input:
+    1800
+    sample output:
+    Not a Leap Year
+
+    */
+
+    int year;
+    scanf("%d",&year);
+
+    if(year>0)
+    {
+        if((year%4==0 && year%100!=0) || (year%400==0))
+        {
+            printf("Leap Year");
+        }
+
+        else
+        {
+            printf("Not a Leap Year");
+        }
+    }
+    else
+    {
+        printf("invalid year");
+    }
+
+    return 0;
+}
